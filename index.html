@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-pages-left">
+            <a href="./index.html">
+                <img src="./img/header-logo.svg" alt=".header-logo">
+            </a>
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li class="nav-list-item">
+                    <a href="./index.html" class="nav-list-link">
+                        Главная
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">
+                        Услуги
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">
+                        Товары
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">
+                        Портфолио
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">
+                        Магазин
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">
+                        Сотрудники
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">
+                        Контакты
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">
+                        Поддержка
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+        <div class="header-pages-right">
+        <ul class="network-list">
+            <li class="network-list-item">
+                <a href="https://vk.com/mifixdev" target="_blank" rel="noopener noreferrer" class="network-list-link">
+                    <svg class="network-list-icon">
+                        <use href="./img/icons/symbol-defs.svg#icon-vk"></use>
+                    </svg>
+                </a>                
+            </li>
+            <li class="network-list-item">
+                <a href="https://t.me/mifixdev" target="_blank" rel="noopener noreferrer" class="network-list-link">
+                    <svg class="network-list-icon">
+                        <use href="./img/icons/symbol-defs.svg#icon-telegram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="network-list-item">
+                <a href="https://discord.com/invite/E2k2gSkE" target="_blank" rel="noopener noreferrer" class="network-list-link">
+                    <svg class="network-list-icon">
+                        <use href="./img/icons/symbol-defs.svg#icon-dc"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="register-list">
+        <button class="reg-btn">
+            <svg class="reg-btn-icon">
+                <use href="./img/icons/symbol-defs.svg#icon-reg1"></use>
+            </svg>
+            Вход
+        </button>
+        <button class="reg-btn" data-open-modal>
+            <svg class="reg-btn-icon" style="fill: #fff;">
+                <use href="./img/icons/symbol-defs.svg#icon-reg2"></use>
+            </svg>
+            Регестрация
+        </button>
+        </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+        </section>
+        <section class="team">
+            <div class="container">
+                <div class="team-pages">
+            <h3 class="team-title">
+                ROSESTUDIO
+                <img src="./img/team1.svg" alt="teamlogo">
+            </h3>
+            <p class="team-text">
+                Команда, специализирующаяся на дизайне, сборках, презентациях, создании сайтов,<br>
+Настройке социальных сетей, копирайте и многом другом. <br>
+Наша студия - это место, где идеи превращаются в реальность, а ваше видение становится живым.
+            </p>
+            </div>
+            <button class="team-btn" type="button">
+                <svg class="team-btn-icon">
+                    <use href="./img/icons/symbol-defs.svg#icon-reg1"></use>
+                </svg>
+                <p>
+                РЕГИСТРАЦИЯ
+                </p>
+            </button>
+            </div>
+        </section>
+    </main>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+           <img src="./img/modal1.jpg" alt="flower" class="modal-img">
+           <form  class="modal-form">
+            <button class="modal-form-login">Вход</button>
+            <button class="modal-form-reg">Регистрация</button>
+            <div class="modal-form-inputs">
+                <input type="text" class="modal-form-input" placeholder="Логин" required> 
+                <svg class="modal-form-icon">
+                    <use href="./img/icons/symbol-defs.svg#icon-login"></use>
+                </svg>
+                <input type="password" class="modal-form-input" placeholder="Придумайте пароль" required>
+                <svg class="modal-form-icon">
+                    <use href="./img/icons/symbol-defs.svg#icon-modal-lock-1"></use>
+                </svg>
+                <input type="password" class="modal-form-input" placeholder="Повторите пароль" required>
+                <svg class="modal-form-icon">
+                    <use href="./img/icons/symbol-defs.svg#icon-modal-lock-1"></use>
+                </svg>
+            </div>
+            <div class="modal-form-conditions">
+                <input type="checkbox" class="form-conditions-check1">
+                <p class="form-conditions-text">Я подтверждаю, что мне исполнилось 14 лет и я прочитал <a href="#">Условия предоставления услуг</a></p>
+            </div>
+            <div class="modal-form-conditions">
+                <input type="checkbox" class="form-conditions-check1">
+                <p class="form-conditions-text"> Получать промо-материалыпо электронной почте </p>
+            </div>
+            <button class="form-btn-akk" type="submit">Создать аккаунт</button>
+            <h3 class="modal-form-title">
+                Или Зарегистрируйтесь с
+            </h3>
+            <ul class="modal-form-networks">
+                <li class="modal-form-item">
+                    <a href="https://vk.com/mifixdev" target="_blank" rel="noopener noreferrer" class="modal-form-link">
+                        <svg class="form-link-icon">
+                            <use href="./img/icons/symbol-defs.svg#icon-modal-vk"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="modal-form-item">
+                    <a href="https://t.me/mifixdev" class="modal-form-link" target="_blank" rel="noopener noreferrer">
+                        <svg class="form-link-icon">
+                            <use href="./img/icons/symbol-defs.svg#icon-modal-telegram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="modal-form-item" target="_blank" rel="noopener noreferrer">
+                    <a href="./pages/soon.html" class="modal-form-link">
+                        <svg class="form-link-icon">
+                            <use href="./img/icons/symbol-defs.svg#icon-Steam"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="modal-form-item" target="_blank" rel="noopener noreferrer">
+                    <a href="./pages/soon.html" class="modal-form-link">
+                        <svg class="form-link-icon">
+                            <use href="./img/icons/symbol-defs.svg#icon-google"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+           </form>
+           <button  type="button" class="modal-btn-close" data-close-modal>
+            <svg class="close-btn-icon">
+                <use href="./img/icons/symbol-defs.svg#icon-modal-btn-close"></use>
+            </svg>
+           </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+</body>
+</html>
